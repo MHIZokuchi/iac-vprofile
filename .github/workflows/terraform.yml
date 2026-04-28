@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - stage
+      - main
     paths:
       - terraform/**
   pull_request:
@@ -68,6 +69,8 @@ jobs:
         run: terraform apply -auto-approve -input=false -parallelism=1 planfile
 
 
+
+#
 
      
 
