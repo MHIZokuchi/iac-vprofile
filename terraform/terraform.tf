@@ -9,16 +9,16 @@ terraform {
       version = "3.5.1"
     }
   }
- 
+
   backend "s3" {
     bucket = "tf-state-206"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
- 
+
   required_version = ">= 1.6.0"
 }
- 
+
 provider "aws" {
   region = var.region
 }
