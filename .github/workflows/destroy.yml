@@ -1,7 +1,7 @@
 name: "Vprofile IAC Destroy"
  
 on:
-  workflow_dispatch:   # manual only — never automatic
+  workflow_dispatch: 
  
 permissions:
   id-token: write
