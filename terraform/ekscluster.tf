@@ -7,7 +7,7 @@ module "eks" {
 
   cluster_endpoint_public_access = true
 
-  enable_cluster_creator_admin_permissions = true   # v20 needs this for kubectl access
+  enable_cluster_creator_admin_permissions = true # v20 needs this for kubectl access
 
   vpc_id     = module.vpc.vpc_id
   subnet_ids = module.vpc.private_subnets
